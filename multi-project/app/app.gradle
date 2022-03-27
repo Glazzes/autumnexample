@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(":notification")
+    implementation project(":clients")
+    implementation 'com.glaze.autumn:glaze-autumn:1.3'
+}
