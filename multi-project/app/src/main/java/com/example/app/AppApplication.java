@@ -3,15 +3,11 @@ package com.example.app;
 import com.example.clients.Client;
 import com.example.notification.NotificationService;
 import com.glaze.autumn.Autumn;
-import com.glaze.autumn.annotations.Autowired;
-import com.glaze.autumn.annotations.AutumnApplication;
-import com.glaze.autumn.annotations.ComponentScan;
-import com.glaze.autumn.annotations.Qualifier;
-import com.glaze.autumn.application.CommandLineRunner;
+import com.glaze.autumn.annotations.*;
 
 @AutumnApplication
 @ComponentScan(basePackages = {"com.example.app", "com.example.notification", "com.example.clients"})
-public class AppApplication implements CommandLineRunner {
+public class AppApplication {
 
     @Autowired
     @Qualifier(id = "graphql")
@@ -26,7 +22,7 @@ public class AppApplication implements CommandLineRunner {
         Autumn.run(AppApplication.class);
     }
 
-    @Override
+    @MainMethod
     public void run() {
         client.sendRequest();
         notificationService.sendNotification();

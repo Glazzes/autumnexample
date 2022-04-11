@@ -3,20 +3,21 @@ import com.autumn.example.service.UserService
 import com.glaze.autumn.Autumn
 import com.glaze.autumn.annotations.Autowired
 import com.glaze.autumn.annotations.AutumnApplication
-import com.glaze.autumn.application.CommandLineRunner
+import com.glaze.autumn.annotations.MainMethod
 
 @AutumnApplication
-class MainExample(private val userService: UserService) : CommandLineRunner{
+class MainExample(private val userService: UserService) {
 
     @Autowired
     private lateinit var printService: PrintService
 
-    override fun run() {
+    @MainMethod
+    fun run() {
         userService.saveUser("Glaze", "EpicPassword")
         printService.print()
     }
 }
 
-fun main(){
+fun main() {
     Autumn.run(MainExample::class.java)
 }
