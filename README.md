@@ -3,3 +3,4 @@ Autumn DI contaienr it's based in how Spring boot's works, if you have any exper
 
 - [Kotlin example](https://github.com/Glazzes/autumnexample/tree/main/Kotlin)
 - [Java example](https://github.com/Glazzes/autumnexample/tree/main/Java)
+- [Multi project build example](https://github.com/Glazzes/autumnexample/tree/main/multi-project)
