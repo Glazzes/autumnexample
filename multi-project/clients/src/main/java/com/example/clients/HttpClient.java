@@ -2,7 +2,7 @@ package com.example.clients;
 
 import com.glaze.autumn.annotations.Component;
 
-// @Component(id = "http")
+@Component(id = "http")
 public class HttpClient implements Client {
 
     @Override

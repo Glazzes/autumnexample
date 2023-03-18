@@ -10,7 +10,7 @@ import com.glaze.autumn.annotations.*;
 public class AppApplication {
 
     @Autowired
-    @Qualifier(id = "graphql")
+    @Qualifier(id = "http")
     private Client client;
 
     private final NotificationService notificationService;

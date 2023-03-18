@@ -5,10 +5,10 @@ import com.autumn.example.service.UserService;
 import com.glaze.autumn.Autumn;
 import com.glaze.autumn.annotations.Autowired;
 import com.glaze.autumn.annotations.AutumnApplication;
-import com.glaze.autumn.application.CommandLineRunner;
+import com.glaze.autumn.annotations.MainMethod;
 
 @AutumnApplication
-public class MainExample implements CommandLineRunner {
+public class MainExample {
     @Autowired
     private PrintService printService;
 
@@ -21,7 +21,7 @@ public class MainExample implements CommandLineRunner {
         Autumn.run(MainExample.class);
     }
 
-    @Override
+    @MainMethod
     public void run() {
         userService.save("Glaze", "GlazePassword");
         printService.print();

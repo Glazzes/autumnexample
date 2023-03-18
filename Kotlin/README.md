@@ -42,7 +42,7 @@ Annotating any class with one of the following annotations turns it into a compo
 
 All of these annotations have an optional `id` parameter that can be used 
 to identify them, if an `id` is passed that will be the id for that given 
-class instance, if no `id` is passed the id will be the class name
+class instance, if no `id` is passed the id will be the class name, for instance `com.glaze.http.HttpClient`
 
 #### How to inject components
 Autumn supports both field and constructor based dependency injection along with qualifying instances.
@@ -122,4 +122,7 @@ class DummyComponent {
 class PasswordEncoder
 ```
 
-Beans can or can not be a [component](#Components), but they can only be instantiated after the class holding the method has been, just like components Beans can take an optional `id` parameter that is going to be used for qualification.
+Beans can or can not be a [component](#Components), but they can only be instantiated after the class holding the method
+has been, just like components, Beans can take an optional `id` parameter 
+that is going to be used for qualification, if no `id` parameter is passed
+the method name will serve as the `ìd`

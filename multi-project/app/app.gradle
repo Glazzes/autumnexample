@@ -14,5 +14,5 @@ repositories {
 dependencies {
     implementation project(":notification")
     implementation project(":clients")
-    implementation 'com.glaze.autumn:glaze-autumn:1.4'
+    implementation 'com.glaze:autumn:0.1'
 }

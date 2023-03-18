@@ -11,5 +11,5 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.glaze.autumn:glaze-autumn:1.4'
+    implementation 'com.glaze:autumn:0.1'
 }
