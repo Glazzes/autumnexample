@@ -5,7 +5,7 @@ import com.glaze.autumn.annotations.Component;
 @Component
 public class PrintService {
 
-    public void print(){
+    public void print() {
         System.out.println("I print things!!!");
     }
 

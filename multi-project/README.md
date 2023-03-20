@@ -2,7 +2,7 @@
 Multi project builds are a bit more complicated than a regular build
 as this projects rely on other projects of your own, in other words
 source code out of your main project, because of this issue it's necessary
-to scan all sub projects, @ComponentScan annotation solves this issue as follows;
+to scan all subprojects, @ComponentScan annotation solves this issue as follows;
 
 ### @ComponentScan annotation
 This annotation allows you to specify which packages will serve as a source of beans,
@@ -28,7 +28,6 @@ multi-project
 dependencies {
     implementation project(':clients')
     implementation project(':notification')
-    implementation 'com.glaze:autumn:0.1'
 }
 ```
 

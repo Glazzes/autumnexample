@@ -4,18 +4,18 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
-group 'com.autumn'
-version '0.1'
+group 'com.example'
+version '0.0.1'
 
 repositories {
     mavenLocal()
     mavenCentral()
 }
 
-application {
-    mainClass.set('com.autumn.example.MainExample')
-}
-
 dependencies {
     implementation 'com.glaze:autumn:0.1'
+}
+
+application {
+    mainClass.set("com.example.circular.CircularExample")
 }

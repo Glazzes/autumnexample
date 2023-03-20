@@ -9,11 +9,12 @@ import com.glaze.autumn.annotations.MainMethod;
 
 @AutumnApplication
 public class MainExample {
+
     @Autowired
     private PrintService printService;
 
     private final UserService userService;
-    public MainExample(UserService userService){
+    public MainExample(UserService userService) {
         this.userService = userService;
     }
 

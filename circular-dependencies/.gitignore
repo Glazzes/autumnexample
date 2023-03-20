@@ -1,9 +1,3 @@
-.idea
-Kotlin/.idea
-Kotlin/build
-Java/.idea
-Java/build
-
 # Ignore Gradle project-specific cache directory
 .gradle
 

@@ -7,6 +7,9 @@ build/
 **/**/build
 **/.gradle
 **/.idea
+/app/build
+/clients/build
+/notification/build
 
 ### STS ###
 .apt_generated
