@@ -1,8 +1,13 @@
+plugins {
+    id("project.java-conventions")
+    id('com.github.johnrengelman.shadow') version('7.1.2')
+}
+
 application {
-    mainClass.set('com.example.app.AppApplication')
+    mainClass.set("com.example.app.AppApplication")
 }
 
 dependencies {
-    implementation project(":notification")
-    implementation project(":clients")
+    implementation(project(":clients"))
+    implementation(project(":notification"))
 }

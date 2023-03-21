@@ -1,5 +1,4 @@
 plugins {
-    id 'java'
     id 'application'
     id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
@@ -13,7 +12,7 @@ repositories {
 }
 
 application {
-    mainClass.set('com.autumn.example.MainExample')
+    mainClass = 'com.autumn.example.MainExample'
 }
 
 dependencies {

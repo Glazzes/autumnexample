@@ -1,6 +1,5 @@
-include('app', 'notification', 'clients')
-
 rootProject.name = "multi-project"
+include('app', 'notification', 'clients')
 
 rootProject.children.forEach {
     it.buildFileName = "${it.name}.gradle"
